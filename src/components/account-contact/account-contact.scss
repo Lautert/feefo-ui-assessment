@@ -1,0 +1,88 @@
+.account-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100%;
+
+    > .title {
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        align-items: flex-start;
+        color: #a19d9d;
+    }
+    > .body {
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem 0;
+        width: 100%;
+
+        > .container-left,
+        > .container-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        > .container-left {
+            .img {
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 0.313rem;
+                background-position: center center;
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+        > .container-right {
+            align-items: flex-start;
+            padding-left: 1rem;
+
+            width: 100%;
+            height: auto;
+
+            font-size: 0.8rem;
+
+            > .name {
+                font-weight: bold;
+            }
+            > .contact {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: 0.25rem;
+
+                .envelope {
+                    margin-right: 0.7rem;
+                }
+            }
+        }
+        @media screen and (max-width: 460px) {
+            > .container-left {
+                > .img {
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
+            > .container-right {
+                align-items: flex-end;
+
+                > .contact {
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    span {
+                        margin-top: 0.25rem;
+                    }
+                }
+            }
+        }
+    }
+}
