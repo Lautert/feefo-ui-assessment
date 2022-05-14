@@ -19,13 +19,6 @@ There is a stub for the data structure in `app.js`. Please use this to drive the
 - The repository is set up to work with `styled-components` if you feel comfortable doing so, please use this instead of css
 - The repository is set up to use jest + testing library for unit tests
 
-# This project was created using
-
-- Node 17.8.0
-- `npx create-react-app feefo-ui-assessment --template typescript`
-- ESlint
-- Prettier
-
 ## Setup
 1. Run `yarn install` to install required dependencies
 2. Run `yarn start` to start a local development server - the react default port is `:3000` so 
@@ -38,3 +31,19 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+-----------------------------------------------------
+
+## Candidate notes
+
+### This project was created using
+
+- Node 17.8.0
+- `npx create-react-app feefo-ui-assessment --template typescript`
+- ESlint
+- Prettier
+
+### Technical notes
+- I'm not accustomed to using styled components so I kept using SASS (I may change in the future :D).
+- My knowledge about testing is not very good, I need to implove, but tried my best.
+- I used typescript rather than proptypes, think it's better to follow the rules.
