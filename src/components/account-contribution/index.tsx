@@ -14,17 +14,32 @@ interface IAccountContributionComponent {
 const AccountContribution: React.FC<IAccountContributionComponent> = ({
     contribution
 }) => {
-    const uploadSuccess = 0;
-    const linesSaved = 0;
+    if (!contribution.uploads || contribution.uploads === 0) {
+        return null;
+    }
+
+    if (!contribution.linesAttempted || contribution.linesAttempted === 0) {
+        return null;
+    }
+
+    const uploadSuccess = (
+        (contribution.successfulUploads / contribution.uploads) *
+        100
+    ).toFixed(0);
+
+    const linesSaved = (
+        (contribution.linesSaved / contribution.linesAttempted) *
+        100
+    ).toFixed(0);
 
     const metrics: IAccountMetricComponent[] = [
         {
-            value: uploadSuccess,
+            value: Number.parseInt(uploadSuccess),
             label: 'upload success',
             className: 'upload'
         },
         {
-            value: linesSaved,
+            value: Number.parseInt(linesSaved),
             label: 'lines saved',
             className: 'saves'
         }
