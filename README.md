@@ -45,5 +45,5 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### Technical notes
 - I'm not accustomed to using styled components so I kept using SASS (I may change in the future :D).
-- My knowledge about testing is not very good, I need to implove, but tried my best.
+- My knowledge about testing is not very good, I need to implove.
 - I used typescript rather than proptypes, think it's better to follow the rules.
